@@ -4,11 +4,17 @@ PS C:\Users\jonmc\Documents\Omnia\GraphQL\server> npm ls
 server@1.0.0 C:\Users\jonmc\Documents\Omnia\GraphQL\server
 
 ─ express-graphql@0.12.0
+
 ─ express@4.18.2
+
 ─ graphql@15.3.0
+
 ─ lodash@4.17.21
+
 ─ mongodb@6.3.0
+
 ─ mongoose@8.0.1
+
 
 Don't need lodash anymore, it was useful in the initial tutorial videos.
 
