@@ -30,7 +30,6 @@ There are definitely some things in the tutorial that didn't work initially.
    it needs to be deconstructed, so change your app.js to what I have done in my app.js here:
    const { graphqlHTTP } = require("express-graphql") // CommonJS
 
-
 3. For the mongoose implementation, you have to create a free account first on mongo db 
 My account URL starts with:  https://cloud.mongodb.com/
 Afer you have your account, you need the mongodb username/password uri of your own.  If you wanna use mine for starters, it's fine since
@@ -40,6 +39,10 @@ const uri = "mongodb+srv://jonmcgill2:wxzQFvRxHibXLwu3@cluster0.r7ueebj.mongodb.
 
 3. I have entered some data into mongodb, based on the tutorial, a small sample of books and authors.  
 There's also some errored entries that might be there, from early implementation bugs, but they can be ignored safely.
+![image](https://github.com/jenkki-mies/graphql-node/assets/9706406/0d9d3f93-d422-4168-8809-72929db733d7)
 
-4. To be implemented: REACT, i.e. Tutorial # 22 onwards, from the initial version I'm uploading to github, so when I make further updates
+
+5. To be implemented: REACT, i.e. Tutorial # 22 onwards, from the initial version I'm uploading to github, so when I make further updates
 I should modify this README.md to reflect that it includes the REACT portions of the tutorial, also.
+
+
