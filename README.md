@@ -20,7 +20,7 @@ Don't need lodash anymore, it was useful in the initial tutorial videos.
 
 For the full tutorial, check out the following YouTube videos:
 
-Startng with GraphQL Tutorial #1 - Introduction to GraphQL
+Starting with GraphQL Tutorial #1 - Introduction to GraphQL
 by NetNinja (UK)
 
 https://youtu.be/Y0lDGjwRYKw?si=Co50CT5NZ-tA98s2
