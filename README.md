@@ -27,8 +27,11 @@ https://youtu.be/Y0lDGjwRYKw?si=Co50CT5NZ-tA98s2
 
 There are definitely some things in the tutorial that didn't work initially.  
 1. instead of: const graphqlHTTP = require('express-graphql');
+   it needs to be deconstructed, so change your app.js to what I have done in my app.js here:
+   const { graphqlHTTP } = require("express-graphql") // CommonJS
 
-2. For the mongoose implementation, you have to create a free account first on mongo db 
+
+3. For the mongoose implementation, you have to create a free account first on mongo db 
 My account URL starts with:  https://cloud.mongodb.com/
 Afer you have your account, you need the mongodb username/password uri of your own.  If you wanna use mine for starters, it's fine since
 I don't have anything sensitive there, and it's hardcoded in the app.js file already, but you would want to replace it with yours, i.e.
