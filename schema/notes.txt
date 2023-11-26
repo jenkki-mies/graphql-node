@@ -94,14 +94,17 @@ mutation {
       age
     }
   }
+
+mutation {
+    addBook(name: "Prelude to Foundation", genre: "Sci-Fi", authorId: "6562de636c5e5881769c0095" ) {
+      name
+      genre
+    }
+  }
+  
+  
 var authors = [
     { name: "Patrick Rothfuss", age: 44, authorId: "6562cfbdc5e0e15c7abcc7ce" },
-    { name: "The Final Empire", genre: "Fantasy", authorId: "6562cfe8c5e0e15c7abcc7d0" },
-    { name: "The Long Earth", genre: "Sci-Fi", authorId: "6562d007c5e0e15c7abcc7d2" },
-    { name: "The Hero of Ages", genre: "Fantasy", authorId: "6562cfe8c5e0e15c7abcc7d0" },
-    { name: "The Colour of Magic", genre: "Fantasy", authorId: "6562d007c5e0e15c7abcc7d2" },
-    { name: "The Light Fantastic", genre: "Fantasy", authorId: "6562d007c5e0e15c7abcc7d2" },
-    { name: "The Grapes of Wrath", genre: "Classic", "6", authorId: "6562d063e1f4e8ccd1282e26" },
 ];
 
 all authors:
@@ -179,6 +182,184 @@ I should modify this README.md to reflect that it includes the REACT portions of
 
 
 
+{
+  "data": {
+    "authors": [
+      {
+        "name": "Brandon Sanderson",
+        "age": 42,
+        "id": "6562cfe8c5e0e15c7abcc7d0",
+        "books": [
+          {
+            "name": "The Hero of Ages",
+            "genre": "Fantasy"
+          }
+        ]
+      },
+      {
+        "name": "Terry Pratchett",
+        "age": 66,
+        "id": "6562d007c5e0e15c7abcc7d2",
+        "books": [
+          {
+            "name": "The Long Earth",
+            "genre": "Sci-Fi"
+          },
+          {
+            "name": "The Colour of Magic",
+            "genre": "Fantasy"
+          },
+          {
+            "name": "The Light Fantastic",
+            "genre": "Fantasy"
+          }
+        ]
+      },
+      {
+        "name": "John Steinbeck",
+        "age": 100,
+        "id": "6562d063e1f4e8ccd1282e26",
+        "books": [
+          {
+            "name": "The Grapes of Wrath",
+            "genre": "Classic"
+          }
+        ]
+      },
+      {
+        "name": "Patrick Rothfuss",
+        "age": 44,
+        "id": "6562dbe06c5e5881769c0085",
+        "books": [
+          {
+            "name": "The Name of the Wind",
+            "genre": "Fantasy"
+          }
+        ]
+      },
+      {
+        "name": "Isaac Asimov",
+        "age": null,
+        "id": "6562de636c5e5881769c0095",
+        "books": [
+          {
+            "name": "Prelude to Foundation",
+            "genre": "Sci-Fi"
+          }
+        ]
+      },
+      {
+        "name": "Ray Bradbury",
+        "age": null,
+        "id": "6562ded37ce4104ded5ffb53",
+        "books": [
+          {
+            "name": "Something Wicked This Way Comes",
+            "genre": "Sci-Fi"
+          }
+        ]
+      }
+    ]
+  }
+}
+
+{
+  books {
+    name
+    genre
+    author {
+      name
+      age
+      id
+    }
+  }
+}
 
 
-
+ "data": {
+    "books": [
+      {
+        "name": "The Final Empire",
+        "genre": "Fantasy",
+        "author": null
+      },
+      {
+        "name": "The Long Earth",
+        "genre": "Sci-Fi",
+        "author": {
+          "name": "Terry Pratchett",
+          "age": 66,
+          "id": "6562d007c5e0e15c7abcc7d2"
+        }
+      },
+      {
+        "name": "The Hero of Ages",
+        "genre": "Fantasy",
+        "author": {
+          "name": "Brandon Sanderson",
+          "age": 42,
+          "id": "6562cfe8c5e0e15c7abcc7d0"
+        }
+      },
+      {
+        "name": "The Colour of Magic",
+        "genre": "Fantasy",
+        "author": {
+          "name": "Terry Pratchett",
+          "age": 66,
+          "id": "6562d007c5e0e15c7abcc7d2"
+        }
+      },
+      {
+        "name": "The Light Fantastic",
+        "genre": "Fantasy",
+        "author": {
+          "name": "Terry Pratchett",
+          "age": 66,
+          "id": "6562d007c5e0e15c7abcc7d2"
+        }
+      },
+      {
+        "name": "The Grapes of Wrath",
+        "genre": "Classic",
+        "author": {
+          "name": "John Steinbeck",
+          "age": 100,
+          "id": "6562d063e1f4e8ccd1282e26"
+        }
+      },
+      {
+        "name": "The Name of the Wind",
+        "genre": "Fantasy",
+        "author": {
+          "name": "Patrick Rothfuss",
+          "age": 44,
+          "id": "6562dbe06c5e5881769c0085"
+        }
+      },
+      {
+        "name": "The Illustrated Man",
+        "genre": "Sci-Fi",
+        "author": null
+      },
+      {
+        "name": "Something Wicked This Way Comes",
+        "genre": "Sci-Fi",
+        "author": {
+          "name": "Ray Bradbury",
+          "age": null,
+          "id": "6562ded37ce4104ded5ffb53"
+        }
+      },
+      {
+        "name": "Prelude to Foundation",
+        "genre": "Sci-Fi",
+        "author": {
+          "name": "Isaac Asimov",
+          "age": null,
+          "id": "6562de636c5e5881769c0095"
+        }
+      }
+    ]
+  }
+}
